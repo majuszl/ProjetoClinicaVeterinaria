@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Tutores</title>
+</head>
+<body onload="proteger(); listarTutores();">
+
+<header>Gerenciamento de Tutores</header>
+
+<div class="nav">
+  <a href="dashboard.html">Início</a>
+  <a href="tutores.html">Tutores</a>
+  <a href="animais.html">Animais</a>
+  <a href="consultas.html">Consultas</a>
+  <a href="historico.html">Histórico</a>
+  <a href="#" onclick="sair()">Sair</a>
+</div>
+
+<div class="container">
+  <h2>Cadastrar Tutor</h2>
+
+  <input id="nomeTutor" placeholder="Nome do Tutor">
+  <input id="telefoneTutor" placeholder="Telefone">
+
+  <button onclick="addTutor()">Cadastrar</button>
+
+  <h2 style="margin-top:30px;">Lista de Tutores</h2>
+  <table class="table" id="tabelaTutores"></table>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/tutores.js"></script>
+</body>
+</html>

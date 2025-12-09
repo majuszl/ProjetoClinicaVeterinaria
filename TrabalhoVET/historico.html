@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Histórico de Consultas</title>
+</head>
+<body onload="proteger(); listarHistorico();">
+
+<header>Histórico de Consultas</header>
+
+<div class="nav">
+  <a href="dashboard.html">Início</a>
+  <a href="tutores.html">Tutores</a>
+  <a href="animais.html">Animais</a>
+  <a href="consultas.html">Consultas</a>
+  <a href="historico.html">Histórico</a>
+  <a href="#" onclick="sair()">Sair</a>
+</div>
+
+<div class="container">
+  <h2>Histórico</h2>
+
+  <table class="table" id="tabelaHistorico"></table>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/historico.js"></script>
+</body>
+</html>
